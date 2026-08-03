@@ -72,8 +72,8 @@ body{font-family:'Inter','Poppins',-apple-system,BlinkMacSystemFont,sans-serif;b
 .feedback-scroll-wrap{position:relative;width:100%;overflow:hidden}
 .feedback-scroll{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none;padding:0 20px;scroll-behavior:smooth}
 .feedback-scroll::-webkit-scrollbar{display:none}
-.feedback-pair{display:flex;gap:12px;flex-shrink:0;scroll-snap-align:start;width:calc(100% - 40px);max-width:480px}
-.feedback-card{flex:1;background:var(--bg-white);border-radius:16px;overflow:hidden;border:1px solid var(--border-light);box-shadow:0 4px 16px rgba(0,0,0,0.06)}
+.feedback-pair{display:flex;flex-shrink:0;scroll-snap-align:start;width:82%;max-width:340px}
+.feedback-card{width:100%;background:var(--bg-white);border-radius:16px;overflow:hidden;border:1px solid var(--border-light);box-shadow:0 4px 16px rgba(0,0,0,0.06)}
 .feedback-card img{width:100%;height:auto;display:block}
 .scroll-dots{display:flex;justify-content:center;gap:8px;margin-top:18px;padding:0 20px;flex-wrap:wrap}
 .scroll-dot{width:8px;height:8px;border-radius:50%;background:var(--border-light);transition:all 0.3s ease;cursor:pointer}
@@ -141,7 +141,7 @@ body{font-family:'Inter','Poppins',-apple-system,BlinkMacSystemFont,sans-serif;b
 .close-headline{font-size:32px}
 .hero-section,.courses-section,.feedback-section{padding-left:60px;padding-right:60px}
 .close-section{padding:60px 60px 68px}
-.feedback-pair{max-width:100%;width:calc(50% - 40px)}
+.feedback-pair{width:auto;max-width:280px}
 }
 @media(min-width:1200px){
 .hero-headline{font-size:42px}.section-title{font-size:32px}
