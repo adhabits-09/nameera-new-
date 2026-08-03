@@ -31,6 +31,7 @@ src="https://www.facebook.com/tr?id=922110713792082&ev=PageView&noscript=1"
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-tap-highlight-color:transparent}
 body{font-family:'Inter','Poppins',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg-white);color:var(--text-dark);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{image-rendering:-webkit-optimize-contrast}
 .sticky-bar{position:fixed;top:0;left:0;right:0;z-index:1000;background:linear-gradient(135deg,var(--primary) 0%,#7B4FEB 100%);padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 2px 20px rgba(102,57,224,0.3);transition:transform 0.3s ease}
 .sticky-bar.hidden{transform:translateY(-100%)}
 .sticky-bar-text{color:#fff;font-size:12px;font-weight:600;letter-spacing:0.3px;flex:1;line-height:1.4}
@@ -58,7 +59,7 @@ body{font-family:'Inter','Poppins',-apple-system,BlinkMacSystemFont,sans-serif;b
 .section-title{font-family:'Poppins',sans-serif;font-size:22px;font-weight:800;color:var(--text-dark);line-height:1.3;margin-bottom:6px}
 .section-subtitle{font-size:14px;color:var(--text-secondary);line-height:1.6}
 .courses-section{background:var(--bg-light);padding:40px 20px 44px}
-.course-hero-image{width:100%;max-width:100%;height:auto;margin:0 auto 24px;display:block;border-radius:18px;box-shadow:var(--shadow-card);border:1px solid var(--border-light)}
+.course-hero-image{width:100%;height:auto;margin:0 auto 24px;display:block;border-radius:18px;box-shadow:var(--shadow-card);border:1px solid var(--border-light)}
 .courses-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:100%;margin:22px auto 0}
 .course-card{background:var(--bg-white);border-radius:16px;padding:18px 14px;border:1px solid var(--border-light);box-shadow:0 3px 12px rgba(0,0,0,0.05);text-align:center;transition:all 0.25s ease}
 .course-card:active{transform:scale(0.97)}
@@ -72,7 +73,7 @@ body{font-family:'Inter','Poppins',-apple-system,BlinkMacSystemFont,sans-serif;b
 .feedback-scroll-wrap{position:relative;width:100%;overflow:hidden}
 .feedback-scroll{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none;padding:0 20px;scroll-behavior:smooth}
 .feedback-scroll::-webkit-scrollbar{display:none}
-.feedback-slide{flex-shrink:0;scroll-snap-align:start;width:calc(100% - 40px);max-width:480px}
+.feedback-slide{flex-shrink:0;scroll-snap-align:start;width:calc(100% - 40px)}
 .feedback-card{background:var(--bg-white);border-radius:16px;overflow:hidden;border:1px solid var(--border-light);box-shadow:0 4px 16px rgba(0,0,0,0.06)}
 .feedback-card img{width:100%;height:auto;display:block}
 .scroll-dots{display:flex;justify-content:center;gap:8px;margin-top:18px;padding:0 20px;flex-wrap:wrap}
@@ -141,7 +142,6 @@ body{font-family:'Inter','Poppins',-apple-system,BlinkMacSystemFont,sans-serif;b
 .close-headline{font-size:32px}
 .hero-section,.courses-section,.feedback-section{padding-left:60px;padding-right:60px}
 .close-section{padding:60px 60px 68px}
-.feedback-slide{max-width:420px}
 }
 @media(min-width:1200px){
 .hero-headline{font-size:42px}.section-title{font-size:32px}
