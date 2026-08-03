@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Empavya - Chocolate Business For Women | Ghar Baithe Kamai Shuru Karo</title>
+<title>Empavya - Chocolate Making Business For Women | Ghar Baithe Kamai Shuru Karo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -31,6 +31,7 @@ src="https://www.facebook.com/tr?id=922110713792082&ev=PageView&noscript=1"
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-tap-highlight-color:transparent}
 body{font-family:'Inter','Poppins',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg-white);color:var(--text-dark);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{image-rendering:-webkit-optimize-contrast}
 .sticky-bar{position:fixed;top:0;left:0;right:0;z-index:1000;background:linear-gradient(135deg,var(--primary) 0%,#7B4FEB 100%);padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 2px 20px rgba(102,57,224,0.3);transition:transform 0.3s ease}
 .sticky-bar.hidden{transform:translateY(-100%)}
 .sticky-bar-text{color:#fff;font-size:12px;font-weight:600;letter-spacing:0.3px;flex:1;line-height:1.4}
@@ -47,7 +48,8 @@ body{font-family:'Inter','Poppins',-apple-system,BlinkMacSystemFont,sans-serif;b
 .hero-headline{font-family:'Poppins',sans-serif;font-size:27px;font-weight:900;line-height:1.25;color:var(--text-dark);margin-bottom:14px;position:relative;z-index:1}
 .hero-headline .highlight{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-light) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero-headline .highlight-gold{color:var(--gold)}
-.hero-sub{font-size:16px;color:var(--text-secondary);line-height:1.7;margin-bottom:26px;max-width:480px;margin-left:auto;margin-right:auto}
+.hero-sub{font-size:16px;color:var(--text-secondary);line-height:1.7;margin-bottom:22px;max-width:480px;margin-left:auto;margin-right:auto}
+.hero-main-image{width:100%;max-width:420px;height:auto;border-radius:16px;margin:0 auto 24px;display:block;box-shadow:var(--shadow-card);border:1px solid var(--border-light)}
 .cta-main{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,var(--accent-green) 0%,var(--accent-green-dark) 100%);color:#fff;font-family:inherit;font-size:18px;font-weight:800;letter-spacing:0.5px;padding:20px 40px;border-radius:50px;border:none;cursor:pointer;width:100%;max-width:400px;box-shadow:var(--shadow-green);transition:all 0.25s ease;text-decoration:none;animation:pulse-glow 2s ease-in-out infinite;margin-bottom:4px}
 @keyframes pulse-glow{0%,100%{box-shadow:0 4px 20px rgba(56,202,80,0.25)}50%{box-shadow:0 6px 30px rgba(56,202,80,0.4)}}
 .cta-main:active{transform:scale(0.97)}
@@ -58,7 +60,6 @@ body{font-family:'Inter','Poppins',-apple-system,BlinkMacSystemFont,sans-serif;b
 .section-title{font-family:'Poppins',sans-serif;font-size:22px;font-weight:800;color:var(--text-dark);line-height:1.3;margin-bottom:6px}
 .section-subtitle{font-size:14px;color:var(--text-secondary);line-height:1.6}
 .courses-section{background:var(--bg-light);padding:40px 20px 44px}
-.course-hero-image{width:100%;max-width:100%;height:auto;margin:0 auto 24px;display:block;border-radius:18px;box-shadow:var(--shadow-card);border:1px solid var(--border-light)}
 .courses-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:100%;margin:22px auto 0}
 .course-card{background:var(--bg-white);border-radius:16px;padding:18px 14px;border:1px solid var(--border-light);box-shadow:0 3px 12px rgba(0,0,0,0.05);text-align:center;transition:all 0.25s ease}
 .course-card:active{transform:scale(0.97)}
@@ -74,7 +75,7 @@ body{font-family:'Inter','Poppins',-apple-system,BlinkMacSystemFont,sans-serif;b
 .feedback-scroll::-webkit-scrollbar{display:none}
 .feedback-pair{display:flex;gap:12px;flex-shrink:0;scroll-snap-align:start;width:calc(100% - 40px);max-width:480px}
 .feedback-card{flex:1;background:var(--bg-white);border-radius:16px;overflow:hidden;border:1px solid var(--border-light);box-shadow:0 4px 16px rgba(0,0,0,0.06)}
-.feedback-card img{width:100%;height:auto;display:block}
+.feedback-card img{width:100%;height:auto;max-height:520px;object-fit:contain;display:block}
 .scroll-dots{display:flex;justify-content:center;gap:8px;margin-top:18px;padding:0 20px;flex-wrap:wrap}
 .scroll-dot{width:8px;height:8px;border-radius:50%;background:var(--border-light);transition:all 0.3s ease;cursor:pointer}
 .scroll-dot.active{background:var(--primary);width:24px;border-radius:4px}
@@ -271,20 +272,20 @@ Aap Kya Karti Ho *
 <section class="hero-section" id="hero">
 <div class="logo-wrap fade-in"><img src="https://i.ibb.co/sphj6NMF/Screenshot-2026-06-22-at-11-10-56-PM.png" alt="Empavya Logo"></div>
 <div class="hero-badge fade-in"><span class="dot"></span>Sirf Women Ke Liye</div>
-<h1 class="hero-headline fade-in">Ghar Baithe Seekho <span class="highlight">Chocolate Business</span><br>Aur <span class="highlight-gold">Apni Kamai Shuru Karo!</span></h1>
+<h1 class="hero-headline fade-in">Ghar Baithe Seekho <span class="highlight">Chocolate Making</span><br>Aur <span class="highlight-gold">Apni Kamai Shuru Karo!</span></h1>
 <p class="hero-sub fade-in">Koi degree nahi, koi experience nahi chahiye. Bas seekho aur ghar se hi kamana shuru karo. 👇</p>
+<img class="hero-main-image fade-in" src="https://i.ibb.co/pvcJ7Gpd/Whats-App-Image-2026-08-04-at-01-19-55.jpg" alt="Chocolate Making Business">
 <button class="cta-main pixel-cta" onclick="openFormPopup('Hero Button')">WHATSAPP PE JANKARI LO</button>
 </section>
 
-<!-- BUSINESS -->
+<!-- SKILL - name only -->
 <section class="courses-section" id="courses">
 <div class="section-header fade-in">
-<div class="section-label"><span class="dot"></span>Ye Hai Aapka Business</div>
-<h2 class="section-title">Ek Naya Business.</h2>
+<div class="section-label"><span class="dot"></span>Ye Hai Aapka Skill</div>
+<h2 class="section-title">1 Skill. Ek Naya Business.</h2>
 </div>
-<img class="course-hero-image fade-in" src="feedback-images/hero-business.jpg" alt="Chocolate Business">
 <div class="courses-grid fade-in">
-<div class="course-card"><div class="course-icon">🍫</div><div class="course-name">Chocolate Business</div></div>
+<div class="course-card"><div class="course-icon">🍫</div><div class="course-name">Chocolate Making</div></div>
 </div>
 <div class="skills-cta-wrap fade-in">
 <button class="cta-main pixel-cta" onclick="openFormPopup('Skills Section')">FULL INFO KE LIYE CLICK KARO</button>
@@ -301,16 +302,19 @@ Aap Kya Karti Ho *
 <div class="feedback-scroll-wrap">
 <div class="feedback-scroll" id="feedbackScroll">
 <div class="feedback-pair">
-<div class="feedback-card"><img src="feedback-images/new-f-1.jpg" alt="Feedback 1" loading="lazy"></div>
-<div class="feedback-card"><img src="feedback-images/new-f-2.jpg" alt="Feedback 2" loading="lazy"></div>
+<div class="feedback-card"><img src="https://i.ibb.co/nMpc6YVB/new-7.jpg" alt="Feedback 1" loading="lazy"></div>
+<div class="feedback-card"><img src="https://i.ibb.co/s9SBm3L9/new-f-2.jpg" alt="Feedback 2" loading="lazy"></div>
 </div>
 <div class="feedback-pair">
-<div class="feedback-card"><img src="feedback-images/new-f-3.jpg" alt="Feedback 3" loading="lazy"></div>
-<div class="feedback-card"><img src="feedback-images/new-f-4.jpg" alt="Feedback 4" loading="lazy"></div>
+<div class="feedback-card"><img src="https://i.ibb.co/V0r6KKfv/new-f-1.jpg" alt="Feedback 3" loading="lazy"></div>
+<div class="feedback-card"><img src="https://i.ibb.co/S7MNPzcF/new-f-3.jpg" alt="Feedback 4" loading="lazy"></div>
 </div>
 <div class="feedback-pair">
-<div class="feedback-card"><img src="feedback-images/new-f-5.jpg" alt="Feedback 5" loading="lazy"></div>
-<div class="feedback-card"><img src="feedback-images/new-f-6.jpg" alt="Feedback 6" loading="lazy"></div>
+<div class="feedback-card"><img src="https://i.ibb.co/M58VS2g4/new-f-4.jpg" alt="Feedback 5" loading="lazy"></div>
+<div class="feedback-card"><img src="https://i.ibb.co/jkXYRDFV/new-f-5.jpg" alt="Feedback 6" loading="lazy"></div>
+</div>
+<div class="feedback-pair">
+<div class="feedback-card"><img src="https://i.ibb.co/WvWMQ3F1/new-f-6.jpg" alt="Feedback 7" loading="lazy"></div>
 </div>
 </div>
 </div>
@@ -319,6 +323,7 @@ Aap Kya Karti Ho *
 <div class="scroll-dot active" data-index="0"></div>
 <div class="scroll-dot" data-index="1"></div>
 <div class="scroll-dot" data-index="2"></div>
+<div class="scroll-dot" data-index="3"></div>
 </div>
 </div>
 </section>
